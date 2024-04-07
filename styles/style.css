@@ -10,6 +10,21 @@
     font-weight: 400;
     line-height: 24px;
 }
+
+.contacts {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    text-align: left;
+
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    box-sizing: content-box;
+    padding-left: 186px;
+}
+
 .header {
     padding: 0 50px 0 50px;
     height: 293px;
@@ -53,7 +68,7 @@
     margin-right: 0;
 }
 
-.header__links-list-link {
+.menu__link {
     font-size: 18px;
     font-weight: 400;
     text-decoration: underline;
@@ -69,19 +84,6 @@
 .header__logo-image {
     width: 148px;
     height: 105px;
-}
-.header__contacts {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.3px;
-    text-align: left;
-
-    grid-column: 3;
-    display: flex;
-    flex-direction: column;
-    width: 240px;
-    box-sizing: content-box;
-    padding-left: 186px;
 }
 .header__contacts-phone {
 }
@@ -111,6 +113,10 @@
 .jambotron__title-text {
     display: block;
     line-height: 100px;
+}
+
+.text__extra-spacing {
+    margin-right: 1em;
 }
 
 .jambotron__title--line1 {
@@ -156,6 +162,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 24px;
+    margin-bottom: 146px;
 }
 
 .lots-list__title {
@@ -197,28 +204,85 @@
     font-weight: 700;
 }
 
+/* About */
 .about {
+    margin-bottom: 180px;
+    padding: 0 24px;
+    display: flex;
 }
 
 
 .about__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  border-radius: 50%;
-  width: 240px;
-  height: 240px;
+    min-width: 359px;
 }
+
+.about__logo-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+}
+
 .about__logo-img {
     width: 148px;
     height: 114px;
 }
 
+.about__description {
+    padding-top: 133px;
+}
+
+.section-title {
+    margin-bottom: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 1000px;
+    margin: 0 auto 88px auto;
+}
 
 .footer__address {
 }
+
 .footer__menu {
+
 }
+
+.footer__links-list {
+    list-style: none;
+}
+
+.footer__links-list-item:first-child a {
+    text-decoration: none;
+    letter-spacing: 0.01em;
+}
+
 .footer__aside {
+
+}
+
+.footer__aside-list {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+.footer__aside-list-item {
+    margin-right: 48px;
+}
+
+.footer__aside-list-item:last-child {
+    margin-right: 0;
+}
+
+.footer__aside-list-icon {
+    height: 48px;
+    width: 48px;
 }
