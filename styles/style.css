@@ -23,7 +23,6 @@
     width: 240px;
     box-sizing: content-box;
     padding-left: 186px;
-    line-height: 1.01em;
 }
 
 .phone {
@@ -120,7 +119,8 @@
 .jambotron__title {
     font-size: 100px;
     letter-spacing: 0.3em;
-    padding: 168px 0 0 0;
+    padding: 172px 0 0 0;
+    margin-bottom: 136px;;
 }
 
 .jambotron__title-text {
@@ -129,7 +129,7 @@
 }
 
 .text__extra-spacing {
-    margin-right: 1em;
+    margin-right: 0.3em;
 }
 
 .jambotron__title--line1 {
@@ -145,13 +145,21 @@
 
 .jambotron__title--line3 {
     padding-left: 633px;
-    margin-bottom: 150px;
 }
 
 .jambotron__footer {
-    padding-left: 76px;
+    padding-left: 78px;
     font-size: 22px;
-    word-spacing: 20px;
+    word-spacing: 1.2rem;
+}
+
+.jambotron__footer__text {
+    margin-right: 52px;
+}
+
+.jambotron__footer__text-extra-spacing {
+    margin-left: -0.1em;
+    margin-right: 1.55rem;
 }
 
 .jambotron__footer-button {
@@ -159,7 +167,7 @@
     color: white;
     font-weight: 500;
     text-decoration: none;
-    padding: .5em 2em;
+    padding: 0.5em 1.45em;
     outline: none;
     border: 1px solid;
     border-radius: 1px;
