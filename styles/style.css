@@ -76,10 +76,6 @@
     margin-right: 0;
 }
 
-.header__links-list-link {
-
-}
-
 .menu__link {
     font-size: 18px;
     font-weight: 400;
@@ -91,16 +87,12 @@
     margin: 0 auto;
     grid-column: 2;
 }
-.header__logo-link {
-}
+
 .header__logo-image {
     width: 148px;
     height: 105px;
 }
-.header__contacts-phone {
-}
-.header__contacts-mail {
-}
+
 .header__contacts-address {
     font-style:normal
 }
@@ -131,7 +123,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-  }
+}
 
 .jambotron__title {
     font-size: 100px;
@@ -315,13 +307,6 @@
     padding-left: 0;
 }
 
-.footer__address {
-}
-
-.footer__menu {
-
-}
-
 .footer__links-list {
     list-style: none;
     text-align: center;
@@ -330,10 +315,6 @@
 .footer__links-list-item:first-child a {
     text-decoration: none;
     letter-spacing: 0.01em;
-}
-
-.footer__aside {
-
 }
 
 .footer__aside-list {
