@@ -25,6 +25,14 @@
     padding-left: 186px;
 }
 
+.phone {
+    letter-spacing: 0.01em;
+}
+
+.mail {
+    letter-spacing: 0.01em;
+}
+
 .header {
     padding: 0 50px 0 50px;
     height: 293px;
@@ -44,10 +52,10 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-start;
+    gap: 1.45em;
 }
 
 .header__links-list-item {
-    margin-left: 23px;
     padding-left: 8px;
 }
 
@@ -79,35 +87,49 @@
     margin: 0 auto;
     grid-column: 2;
 }
-.header__logo-link {
-}
+
 .header__logo-image {
     width: 148px;
     height: 105px;
 }
-.header__contacts-phone {
-}
-.header__contacts-mail {
-}
+
 .header__contacts-address {
     font-style:normal
 }
 
+/* main */
+.main {
+    margin-bottom: 158px;
+}
+
 /* jambotron */
 .jambotron {
+    position: relative;
     height: 757px;
     color: #FFF;
     text-transform: uppercase;
+    margin-bottom: 179px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.jambotron:after {
+    content: "";
     background-image: url("../images/cover.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 179px;
+    position: absolute;
+    background-position-x: -140px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .jambotron__title {
     font-size: 100px;
     letter-spacing: 0.3em;
-    padding: 168px 0 0 0;
+    padding: 172px 0 0 0;
+    margin-bottom: 136px;;
 }
 
 .jambotron__title-text {
@@ -116,7 +138,7 @@
 }
 
 .text__extra-spacing {
-    margin-right: 1em;
+    margin-right: 0.3em;
 }
 
 .jambotron__title--line1 {
@@ -132,13 +154,21 @@
 
 .jambotron__title--line3 {
     padding-left: 633px;
-    margin-bottom: 150px;
 }
 
 .jambotron__footer {
-    padding-left: 76px;
+    padding-left: 78px;
     font-size: 22px;
-    word-spacing: 20px;
+    word-spacing: 1.2rem;
+}
+
+.jambotron__footer__text {
+    margin-right: 52px;
+}
+
+.jambotron__footer__text-extra-spacing {
+    margin-left: -0.1em;
+    margin-right: 1.55rem;
 }
 
 .jambotron__footer-button {
@@ -146,11 +176,11 @@
     color: white;
     font-weight: 500;
     text-decoration: none;
-    padding: .5em 2em;
+    padding: 0.5em 1.45em;
     outline: none;
     border: 1px solid;
     border-radius: 1px;
-    word-spacing: 0px;
+    word-spacing: 0;
 }
 
 .big-spacing {
@@ -162,7 +192,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 24px;
-    margin-bottom: 146px;
+    margin-bottom: 180px;
 }
 
 .lots-list__title {
@@ -173,11 +203,20 @@
 .lots-list__list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .lots-list__list-item {
     list-style: none;
+    margin-bottom: 25px;
 }
+
+.lots-list__list-item:nth-last-child(-n+3):nth-child(3n+1),
+.lots-list__list-item:nth-last-child(-n+3):nth-child(3n+1) ~ * {
+    margin-bottom: 0;
+}
+
 
 .lots-list__item {
     position: relative;
@@ -187,7 +226,10 @@
 
 .lots-list__item-background {
     position: absolute;
-    z-index: -1;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .lots-list__item-text {
@@ -197,23 +239,38 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .lots-list__item-title {
     font-size: 22px;
     font-weight: 700;
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.lots-list__item-description {
+    color: #FFF;
+}
+
+.lots-list__see-more {
+    font-size: 20px;
+    padding-left: 40px;
+    text-underline-offset: 0.3em;
 }
 
 /* About */
 .about {
-    margin-bottom: 180px;
-    padding: 0 24px;
     display: flex;
 }
 
 
 .about__logo {
-    min-width: 359px;
+    min-width: 383px;
 }
 
 .about__logo-circle {
@@ -233,11 +290,17 @@
 }
 
 .about__description {
-    padding-top: 133px;
+    padding-top: 102px;
+    width: 693px;
 }
 
-.section-title {
+.about__description-title {
     margin-bottom: 100px;
+}
+
+.about__description-paragraph {
+    margin-bottom: 24px;
+    letter-spacing: 0.005em;
 }
 
 .footer {
@@ -248,15 +311,13 @@
     margin: 0 auto 88px auto;
 }
 
-.footer__address {
-}
-
-.footer__menu {
-
+.footer__contacts {
+    padding-left: 0;
 }
 
 .footer__links-list {
     list-style: none;
+    text-align: center;
 }
 
 .footer__links-list-item:first-child a {
@@ -264,22 +325,11 @@
     letter-spacing: 0.01em;
 }
 
-.footer__aside {
-
-}
-
 .footer__aside-list {
     display: flex;
     justify-content: end;
     list-style: none;
-}
-
-.footer__aside-list-item {
-    margin-right: 48px;
-}
-
-.footer__aside-list-item:last-child {
-    margin-right: 0;
+    gap: 48px;
 }
 
 .footer__aside-list-icon {
