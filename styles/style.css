@@ -52,10 +52,10 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-start;
+    gap: 1.45em;
 }
 
 .header__links-list-item {
-    margin-left: 1.45em;
     padding-left: 8px;
 }
 
@@ -180,7 +180,7 @@
     outline: none;
     border: 1px solid;
     border-radius: 1px;
-    word-spacing: 0px;
+    word-spacing: 0;
 }
 
 .big-spacing {
@@ -329,14 +329,7 @@
     display: flex;
     justify-content: end;
     list-style: none;
-}
-
-.footer__aside-list-item {
-    margin-right: 48px;
-}
-
-.footer__aside-list-item:last-child {
-    margin-right: 0;
+    gap: 48px;
 }
 
 .footer__aside-list-icon {
