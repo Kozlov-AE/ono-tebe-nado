@@ -24,63 +24,60 @@
           </li>
         </ul>
       </nav>
-      <div class="header__logo">
-        <a class="header__logo-link" href="#">
-          <img class="header__logo-image" src="./images/logo-black.svg" alt="Логотип сайта">
-        </a>
-      </div>
-      <div class="header__contacts contacts">
-          <a class="header__contacts-phone phone" href="tel:+99995555555">+9 999 555 5555</a>
-          <a class="header__contacts-mail mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <address class="header__contacts-address address">
+      <a class="header__logo-link" href="#">
+        <img class="header__logo-image" src="./images/logo-black.svg" alt="Логотип сайта">
+      </a>
+      <address class="header__contacts contacts">
+          <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <p class="header__contacts-address address">
             наб. Принсенграхт 263-<br>265, Амстердам
-          </address>
-      </div>
+          </p>
+      </address>
     </header>
     <main class="main">
       <article class="jambotron">
-        <h1 class="jambotron__title">
-          <span class="jambotron__title-text jambotron__title--line1"><span class="text__extra-spacing">он</span>о</span>
-          <span class="jambotron__title-text jambotron__title--line2"><span class="text__extra-spacing">теб</span>е</span>
-          <span class="jambotron__title-text jambotron__title--line3"><span class="text__extra-spacing">н</span>адо</span>
-        </h1>
-        <div class="jambotron__footer">
-          <span class="jambotron__footer__text">Аукцион вещей, <span class="jambotron__footer__text-extra-spacing">в</span>которые никто не верил</span>
-          <a href="#" class="jambotron__footer-button">Сделать ставку</a>
+        <div class="jambotron__content darken">
+          <h1 class="jambotron__title">
+            <span class="jambotron__title-text jambotron__title--line1">о<span class="text__extra-spacing">но</span></span>
+            <span class="jambotron__title-text jambotron__title--line2">те<span class="text__extra-spacing">бе</span></span>
+            <span class="jambotron__title-text jambotron__title--line3"><span class="text__extra-spacing">н</span>адо</span>
+          </h1>
+          <div class="jambotron__footer">
+            <p class="jambotron__footer__text">Аукцион вещей, <span class="jambotron__footer__text-extra-spacing">в</span>которые никто не верил</p>
+            <button class="jambotron__footer-button">Сделать ставку</button>
+          </div>
         </div>
       </article>
-      <section class="lots-list">
-        <h2 class="lots-list__title section-title">Лоты</h2>
-        <ul class="lots-list__list">
-          <li class="lots-list__list-item">
-            <article class="lots-list__item">
-              <img src="./images/card-lot-01.jpg" class="lots-list__item-background" alt="">
-              <div class="lots-list__item-text">
-                <h3 class="lots-list__item-title">Фильм режиссёра, который бросил киношколу</h3>
-                <p class="lots-list__item-description paragraph">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+      <section class="lots">
+        <h2 class="lots__title section-title">Лоты</h2>
+        <ul class="lots__list">
+          <li class="lots__list-item">
+            <!-- Здесь и ниже для карточек: Это получается в будущем придется генерировать новые классы ради того, что бы вставить изображение на фон карточек? -->
+            <article class="lots__item lots__item-1">
+              <div class="lots__item-text darken">
+                <h3 class="lots__item-title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="lots__item-description paragraph">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
               </div>
             </article>
           </li>
-          <li class="lots-list__list-item">
-            <article class="lots-list__item">
-              <img src="./images/card-lot-02.jpg" class="lots-list__item-background" alt="">
-              <div class="lots-list__item-text">
-                <h3 class="lots-list__item-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
-                <p class="lots-list__item-description paragraph">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+          <li class="lots__list-item">
+            <article class="lots__item lots__item-2">
+              <div class="lots__item-text darken">
+                <h3 class="lots__item-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                <p class="lots__item-description paragraph">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
               </div>
             </article>
           </li>
-          <li class="lots-list__list-item">
-            <article class="lots-list__item">
-              <img src="./images/card-lot-03.jpg" class="lots-list__item-background" alt="">
-              <div class="lots-list__item-text">
-                <h3 class="lots-list__item-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-                <p class="lots-list__item-description paragraph">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+          <li class="lots__list-item lots__item-3">
+            <article class="lots__item">
+              <div class="lots__item-text darken">
+                <h3 class="lots__item-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                <p class="lots__item-description paragraph">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
               </div>
             </article>
-          </li>
         </ul>
-        <a class="lots-list__see-more" href="#">посмотреть больше</a>
+        <a class="lots__see-more" href="#">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="about__logo">
@@ -96,13 +93,13 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__contacts contacts">
-        <a class="footer__contacts-phone phone" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="footer__contacts-mail mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address class="footer__contacts-address address">
+      <address class="footer__contacts contacts">
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="footer__contacts-address address">
           наб. Принсенграхт 263-<br>265, Амстердам
-        </address>
-      </div>
+        </p>
+      </address>
       <nav class="footer__menu">
         <ul class="footer__links-list">
           <li class="footer__links-list-item">
@@ -116,7 +113,7 @@
           </li>
         </ul>
       </nav>
-      <aside class="footer__aside">
+      <nav class="footer__aside">
         <ul class="footer__aside-list">
           <li class="footer__aside-list-item">
             <a href="https://www.youtube.com/">
@@ -134,7 +131,7 @@
             </a>
           </li>
         </ul>
-      </aside>
+      </nav>
     </footer>
   </body>
 </html>
