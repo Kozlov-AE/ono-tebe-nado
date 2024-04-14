@@ -18,9 +18,9 @@ a:hover {
 .contacts {
     font-size: 18px;
     font-weight: 400;
+    font-style: normal;
     line-height: 24.3px;
     text-align: left;
-
     grid-column: 3;
     display: flex;
     flex-direction: column;
@@ -229,15 +229,15 @@ a:hover {
     height: 100%;
 }
 
-.lots__item-1 {
+.lots__item--movie {
     background-image: url("../images/card-lot-01.jpg");
 }
 
-.lots__item-2 {
+.lots__item--book {
     background-image: url("../images/card-lot-02.jpg");
 }
 
-.lots__item-3 {
+.lots__item--image {
     background-image: url("../images/card-lot-03.jpg");
 }
 
